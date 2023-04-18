@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uub-MK-oEA">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ybG-ny-8ZA">
+            <objects>
+                <viewController id="Uub-MK-oEA" customClass="ViewController" customModule="DataBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XaP-gu-hIr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBy-kg-9GD">
+                                <rect key="frame" x="16" y="119" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yqk-7w-hd3">
+                                <rect key="frame" x="16" y="183" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8yt-k3-zS3">
+                                <rect key="frame" x="16" y="287" width="361" height="78.666666666666686"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cvr-Ma-fYo">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="78.666666666666671"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-6I-2Hm">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="34.333333333333336"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqu-DD-Kd4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="34.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Add">
+                                                            <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="saveButtonClicked:" destination="Uub-MK-oEA" eventType="touchUpInside" id="i58-rb-I6g"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jL7-6v-QiH">
+                                                        <rect key="frame" x="185.66666666666663" y="0.0" width="175.33333333333337" height="34.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Delete">
+                                                            <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="deleteButtonClicked:" destination="Uub-MK-oEA" eventType="touchUpInside" id="YDb-V1-0U4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Evd-tV-8IU">
+                                                <rect key="frame" x="0.0" y="44.333333333333314" width="361" height="34.333333333333343"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7YO-FC-gcd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34.333333333333336"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rm-dS-gsI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="34.333333333333336"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Update">
+                                                                    <color key="baseBackgroundColor" systemColor="linkColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="updateButtonClicked:" destination="Uub-MK-oEA" eventType="touchUpInside" id="htU-pv-juA"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgU-xt-3Nd">
+                                                                <rect key="frame" x="185.66666666666663" y="0.0" width="175.33333333333337" height="34.333333333333336"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Search">
+                                                                    <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="searchButtonClicked:" destination="Uub-MK-oEA" eventType="touchUpInside" id="RDG-MS-Wo8"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y1I-4y-iWU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y1I-4y-iWU" firstAttribute="trailing" secondItem="8yt-k3-zS3" secondAttribute="trailing" constant="16" id="1uG-yt-iQP"/>
+                            <constraint firstItem="FBy-kg-9GD" firstAttribute="leading" secondItem="y1I-4y-iWU" secondAttribute="leading" constant="16" id="4d1-JT-e0a"/>
+                            <constraint firstItem="8yt-k3-zS3" firstAttribute="leading" secondItem="y1I-4y-iWU" secondAttribute="leading" constant="16" id="6c8-rM-5Nu"/>
+                            <constraint firstItem="Yqk-7w-hd3" firstAttribute="leading" secondItem="y1I-4y-iWU" secondAttribute="leading" constant="16" id="9gN-aD-UiY"/>
+                            <constraint firstItem="8yt-k3-zS3" firstAttribute="top" secondItem="Yqk-7w-hd3" secondAttribute="bottom" constant="70" id="DyN-pj-lAr"/>
+                            <constraint firstItem="y1I-4y-iWU" firstAttribute="trailing" secondItem="FBy-kg-9GD" secondAttribute="trailing" constant="16" id="a0J-ju-jq9"/>
+                            <constraint firstItem="FBy-kg-9GD" firstAttribute="top" secondItem="y1I-4y-iWU" secondAttribute="top" constant="60" id="f5W-sk-h24"/>
+                            <constraint firstItem="Yqk-7w-hd3" firstAttribute="top" secondItem="FBy-kg-9GD" secondAttribute="bottom" constant="30" id="j86-kr-rD0"/>
+                            <constraint firstItem="y1I-4y-iWU" firstAttribute="trailing" secondItem="Yqk-7w-hd3" secondAttribute="trailing" constant="16" id="nL4-oU-y1L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kXN-pm-WkE"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="Yqk-7w-hd3" id="4cV-7E-4Xx"/>
+                        <outlet property="deleteButton" destination="jL7-6v-QiH" id="p4p-hr-xic"/>
+                        <outlet property="nameTextField" destination="Yqk-7w-hd3" id="ceB-Sb-egd"/>
+                        <outlet property="saveButton" destination="Hqu-DD-Kd4" id="rZ8-bb-vSE"/>
+                        <outlet property="searchButton" destination="CgU-xt-3Nd" id="3dn-DR-d5g"/>
+                        <outlet property="updateButton" destination="3Rm-dS-gsI" id="Hwa-GW-D0D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8M-dt-DLk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="-59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
